@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cadre{
+    @apply rounded-md overflow-hidden shadow-md relative flex-wrap-reverse
+}

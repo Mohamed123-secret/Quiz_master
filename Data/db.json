@@ -1,0 +1,100 @@
+{
+  "quizzes": [
+    {
+      "id": "1",
+      "title": "Quiz HTML",
+      "questions": [
+        {
+          "id": 101,
+          "question": "Que signifie HTML ?",
+          "options": [
+            "HyperText Markup Language",
+            "Home Tool Markup Language",
+            "Hyperlinks and Text Markup Language"
+          ],
+          "answer": "HyperText Markup Language"
+        },
+        {
+          "id": 102,
+          "question": "Quelle balise crée un lien ?",
+          "options": [
+            "<a>",
+            "<link>",
+            "<href>"
+          ],
+          "answer": "<a>"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Quiz CSS",
+      "questions": [
+        {
+          "id": 103,
+          "question": "Quelle propriété CSS est utilisée pour changer la couleur de fond ?",
+          "options": [
+            "background-color",
+            "color",
+            "bgcolor"
+          ],
+          "answer": "background-color"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Quiz JavaScript",
+      "questions": [
+        {
+          "id": 104,
+          "question": "Quelle est la syntaxe correcte pour créer une fonction en JavaScript ?",
+          "options": [
+            "function myFunction()",
+            "def myFunction()",
+            "create myFunction()"
+          ],
+          "answer": "function myFunction()"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Quiz React",
+      "questions": [
+        {
+          "id": 105,
+          "question": "Que signifie JSX ?",
+          "options": [
+            "JavaScript XML",
+            "JavaScript eXtension",
+            "Java eXtended"
+          ],
+          "answer": "JavaScript XML"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Quiz Node.js",
+      "questions": [
+        {
+          "id": 106,
+          "question": "Quel module Node.js est utilisé pour créer un serveur HTTP ?",
+          "options": [
+            "http",
+            "fs",
+            "url"
+          ],
+          "answer": "http"
+        }
+      ]
+    },
+    {
+      "id": "3fdb"
+    },
+    {
+      "id": "ece5"
+    }
+  ]
+}
