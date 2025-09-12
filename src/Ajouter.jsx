@@ -70,7 +70,7 @@ const Ajoutquizz = () => {
     return (
         <div>
             <NavBar />
-            <h2 className="text-center">Salut le Pros je veux ajouter le Nouveu Quiz</h2>
+            <h2 className="text-center">Salut les Pros tu peux ajouter le Nouveu Quiz</h2>
             <form className="flex flex-col w-1/2 mx-auto mt-4 border p-2 rounded-lg shadow-lg bg-slate-300" onSubmit={handleSubmit}>
                 <input
                     type="text"

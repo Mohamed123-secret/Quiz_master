@@ -48,8 +48,8 @@ const QuizDetails = () => {
             {error && <div>{error}</div>}
             <NavBar />
             {isLoading && (
-                <div className="flex justify-center bg-orange-400 text-white p-3 text-2xl">
-                    En cours de chargement...
+                <div className='justify-center flex text-white'>
+                    {isLoading && <div className='bg-emerald-600 px-7 py-1 text-1xl rounded-md'>Encours de traitement</div>}
                 </div>
             )}
 
@@ -63,7 +63,7 @@ const QuizDetails = () => {
                         <div className="text-center mt-6">
                             <h2 className="text-2xl font-bold">
                                 Score final : {score} / {quiz.questions.length} <br />
-                                {((score / quiz.questions.length) * 100).toFixed(2)}% 
+                                {((score / quiz.questions.length) * 100).toFixed(2)}%
                                 {/* veux dire pourcentage de réussite toFixed(2) pour arrondir à 2 décimales */}
                             </h2>
                             <button
@@ -83,9 +83,9 @@ const QuizDetails = () => {
                         <div className="mt-6 text-center">
                             <h3 className="text-xl font-bold">
                                 Question {currentQuestion + 1} sur {quiz.questions.length}
-                            </h3>  
+                            </h3>
                             {/* Veux dire pour afficher le numéro de la question actuelle et le nombre total de questions */}
-                            <p className="mt-2">{quiz.questions[currentQuestion].question}</p> 
+                            <p className="mt-2">{quiz.questions[currentQuestion].question}</p>
                             {/* Veux dire pour afficher la question actuelle */}
 
                             <ul className="mt-4 space-y-2">
@@ -122,7 +122,7 @@ const QuizDetails = () => {
                             className="bg-red-600 text-white px-4 py-2 rounded"
                         >
                             Supprimer le Quiz
-                        </button> 
+                        </button>
                         {/* Veux dire pour supprimer le quiz */}
                     </div>
                 </div>
