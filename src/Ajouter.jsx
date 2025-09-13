@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import NavBar from "./NavBare";
 
 const Ajoutquizz = () => {
-    const [questions, setQuestions] = useState([{ question: "", options: ["", "", "", ""], correctAnswer: "" }]);
+    const [questions, setQuestions] = useState([{ question: "", options: ["", "", "", ""], answer: "" }]);
     const [title, setTitle] = useState("");
     const [isLoading, setIsLoading] = useState(false);
 
@@ -13,7 +13,7 @@ const Ajoutquizz = () => {
     // const [correctAnswer, setCorrectAnswer] = useState("");
 
     const handleAddQuestion = () => {
-        setQuestions([...questions, { question: "", options: ["", "", "", ""], correctAnswer: "" }]);
+        setQuestions([...questions, { question: "", options: ["", "", "", ""], answer: "" }]);
     };//Pour ajouter une nouvelle question
 
     const handleAddQuestionOption = (questionIndex) => {
@@ -33,9 +33,9 @@ const Ajoutquizz = () => {
         newQuestions[questionIndex].options[optionIndex] = value;
         setQuestions(newQuestions);
     };//Pour ajouter le texte d'une option spécifique
-    const handleCorrectAnswerChange = (questionIndex, value) => {
+    const handlanswerChange = (questionIndex, value) => {
         const newQuestions = [...questions];
-        newQuestions[questionIndex].correctAnswer = value;
+        newQuestions[questionIndex].answer = value;
         setQuestions(newQuestions);
     };//Pour ajouter la réponse correcte d'une question spécifique
 
@@ -108,8 +108,8 @@ const Ajoutquizz = () => {
                         <input
                             type="text"
                             placeholder="Correct Answer"
-                            value={q.correctAnswer}
-                            onChange={(e) => handleCorrectAnswerChange(questionIndex, e.target.value)}
+                            value={q.answer}
+                            onChange={(e) => handlanswerChange(questionIndex, e.target.value)}
                             className="mb-2 p-2 border rounded w-full"
                         />
                     </div>

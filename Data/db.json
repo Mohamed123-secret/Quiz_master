@@ -91,12 +91,6 @@
       ]
     },
     {
-      "id": "3fdb"
-    },
-    {
-      "id": "ece5"
-    },
-    {
       "id": "7273",
       "title": "CSS",
       "questions": [
@@ -109,7 +103,7 @@
             "Boder-radios",
             "border"
           ],
-          "correctAnswer": "Font-size"
+          "answer": "Font-size"
         },
         {
           "question": "Quelle Propriété fait pour Agrandir l’intérieur de l’élément ",
@@ -119,7 +113,7 @@
             "padding",
             "background "
           ],
-          "correctAnswer": "padding "
+          "answer": "padding "
         },
         {
           "question": "Quelle Propriété fait pour Agrandir l’extérieur  du l’élément",
@@ -129,7 +123,52 @@
             "font-size",
             "marging"
           ],
-          "correctAnswer": "marging"
+          "answer": "marging"
+        }
+      ]
+    },
+    {
+      "id": "937c",
+      "title": "JavaScript ",
+      "questions": [
+        {
+          "question": "Quelle methode permet de retrouver La position d'un caractère ",
+          "options": [
+            "substre",
+            "slice",
+            "indexOf",
+            "trime",
+            ""
+          ],
+          "answer": "indexOf"
+        },
+        {
+          "question": "Quelle methode permet permet de remplacer une chêne a l'autre",
+          "options": [
+            "charAt",
+            "indexOf",
+            "concate",
+            "slice",
+            "replace"
+          ],
+          "answer": "replace"
+        }
+      ]
+    },
+    {
+      "id": "3dae",
+      "title": "JavaScript ",
+      "questions": [
+        {
+          "question": "Quelle opérateur de comparaison qui comparer le chose même au type si c'est égal ",
+          "options": [
+            "+=",
+            "==",
+            ">",
+            "<=",
+            "==="
+          ],
+          "answer": "==="
         }
       ]
     }
