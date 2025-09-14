@@ -11,7 +11,7 @@ const NavBar = () => {
                 </ul>
             </nav>
             <div className="text-center mt-4 text-red">
-                <p>&copy; 2025 Quiz Master.</p>
+                <p className="text-red-200">&copy; 2025 Quiz Master.</p>
             </div>
         </div>
      );

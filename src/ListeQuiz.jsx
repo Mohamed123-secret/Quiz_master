@@ -45,12 +45,12 @@ const ListeQuiz = ({ quizzes }) => {
             {quizzes?.map((quiz) => (
                 <div className='text-center cadre m-5' key={quiz.id}>
                     <h2 className='bg-green-700 text-white text-2xl'>
-                        Titre : {quiz.title}
+                     {quiz.title}
                     </h2>
                     {/* <p>Réponse : {q.answer}</p> */}
                     {quiz.questions?.map((q) => (
                         <div key={q.id} className="border p-4 mt-2">
-                            <p className="font-bold">Question : {q.question}</p>
+                            <p className="font-bold text-red-500">Question : {q.question}</p>
                         </div>
                     ))}
                     <div>

@@ -39,7 +39,7 @@ const QuizPlay = () => {
             <h1>Quiz : {quiz.title}</h1>
             {showScore ? (
                 <div>
-                    <h2>Score final : {score} / {quiz.questions.length}</h2>
+                    <h2 className="text-pink-600">Score final : {score} / {quiz.questions.length}</h2>
                 </div>
             ) : (
                 <div>

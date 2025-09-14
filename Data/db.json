@@ -91,43 +91,6 @@
       ]
     },
     {
-      "id": "7273",
-      "title": "CSS",
-      "questions": [
-        {
-          "question": "Quelles Propriété fait pour la taille du Police ",
-          "options": [
-            "Font-size",
-            "Bacground",
-            "Font-family",
-            "Boder-radios",
-            "border"
-          ],
-          "answer": "Font-size"
-        },
-        {
-          "question": "Quelle Propriété fait pour Agrandir l’intérieur de l’élément ",
-          "options": [
-            "marging",
-            "displaye-flex",
-            "padding",
-            "background "
-          ],
-          "answer": "padding "
-        },
-        {
-          "question": "Quelle Propriété fait pour Agrandir l’extérieur  du l’élément",
-          "options": [
-            "font-family",
-            "color",
-            "font-size",
-            "marging"
-          ],
-          "answer": "marging"
-        }
-      ]
-    },
-    {
       "id": "937c",
       "title": "JavaScript ",
       "questions": [
