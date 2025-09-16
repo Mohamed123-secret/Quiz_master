@@ -43,7 +43,7 @@ const QuizPlay = () => {
                 </div>
             ) : (
                 <div>
-                    <h2>
+                    <h2> 
                         Question {currentQuestion + 1} sur {quiz.questions.length}
                     </h2>
                     <p>{quiz.questions[currentQuestion].question}</p>

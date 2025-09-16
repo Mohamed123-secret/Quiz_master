@@ -40,10 +40,10 @@ import './index.css'
 // }
 const ListeQuiz = ({ quizzes }) => {
     return (
-        <div className='flex  items-center flex-col p-4 gap-4 flex-wrap'>
-
+        <div className='flex justify-center items-center gap-4 flex-wrap'>
+            
             {quizzes?.map((quiz) => (
-                <div className='text-center cadre m-5' key={quiz.id}>
+                <div className='text-center  max-w-xs cadre m-5' key={quiz.id}>
                     <h2 className='bg-green-700 text-white text-2xl'>
                      {quiz.title}
                     </h2>

@@ -1,32 +1,6 @@
 {
   "quizzes": [
     {
-      "id": "1",
-      "title": "Quiz HTML",
-      "questions": [
-        {
-          "id": 101,
-          "question": "Que signifie HTML ?",
-          "options": [
-            "HyperText Markup Language",
-            "Home Tool Markup Language",
-            "Hyperlinks and Text Markup Language"
-          ],
-          "answer": "HyperText Markup Language"
-        },
-        {
-          "id": 102,
-          "question": "Quelle balise crée un lien ?",
-          "options": [
-            "<a>",
-            "<link>",
-            "<href>"
-          ],
-          "answer": "<a>"
-        }
-      ]
-    },
-    {
       "id": "2",
       "title": "Quiz CSS",
       "questions": [
@@ -55,22 +29,6 @@
             "create myFunction()"
           ],
           "answer": "function myFunction()"
-        }
-      ]
-    },
-    {
-      "id": "4",
-      "title": "Quiz React",
-      "questions": [
-        {
-          "id": 105,
-          "question": "Que signifie JSX ?",
-          "options": [
-            "JavaScript XML",
-            "JavaScript eXtension",
-            "Java eXtended"
-          ],
-          "answer": "JavaScript XML"
         }
       ]
     },

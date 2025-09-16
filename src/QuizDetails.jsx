@@ -18,12 +18,13 @@ const QuizDetails = () => {
 
     // Gérer la suppression du quiz
     const handleDelete = () => {
-        fetch(`http://localhost:8000/quizzes/${id}`, {
+        alert(`Voulez-vous vraiment supimer cette quiz ${fetch(`http://localhost:8000/quizzes/${id}`, {
             method: "DELETE",
         }).then(() => {
             console.log("Supprimé avec succès");
             navigate("/");
-        });
+        })
+            }`)
     };
 
     // Gérer la réponse
@@ -54,20 +55,21 @@ const QuizDetails = () => {
             )}
 
             {quiz && (
-                <div className="p-4">
-                    <h2 className="bg-green-700 text-white py-3 w-2/4 mx-auto rounded flex justify-center text-2xl">
-                         {quiz.title}
+                <div className=" bg-white max-w-xl shadow-lg rounded-2xl mx-auto">
+                    <h2 className=" text-purple-600 font-bold py-3 mx-auto rounded flex text-3xl">
+                        {quiz.title}
                     </h2>
 
                     {showScore ? (
-                        <div className="text-center mt-6">
-                            <h2 className="text-2xl font-bold text-purple-500">
-                                Score final : {score} / {quiz.questions.length} <br />
+                        <div className="max-w-xl mx-auto bg-white text-center mt-6">
+                            <h2 className="text-xl font-bold text-gray-600 ">
+                                <span className="">Felicitation:</span>
+                                Votre Score final : {score} / {quiz.questions.length} <br />
                                 {((score / quiz.questions.length) * 100).toFixed(2)}%
                                 {/* veux dire pourcentage de réussite toFixed(2) pour arrondir à 2 décimales */}
                             </h2>
                             <button
-                                className="mt-4 bg-blue-600 text-white px-4 py-2 rounded"
+                                className="mt-6 bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-xl"
                                 onClick={() => {
                                     setCurrentQuestion(0);
                                     setScore(0);
@@ -81,23 +83,24 @@ const QuizDetails = () => {
                         </div>
                     ) : (
                         <div className="mt-6 text-center">
-                            <h3 className="text-xl ">
+                            <h3 className="text-lg font-semibold text-purple-600">
                                 Question {currentQuestion + 1} sur {quiz.questions.length}
                             </h3>
                             {/* Veux dire pour afficher le numéro de la question actuelle et le nombre total de questions */}
-                            <p className="mt-2 text-red-400 font-bold text-xl">{quiz.questions[currentQuestion].question}</p>
+                            <p className="mt-2 text-gray-700 text-lg">{quiz.questions[currentQuestion].question}</p>
                             {/* Veux dire pour afficher la question actuelle */}
 
-                            <ul className="flex mt-4 space-y-2 cadre gap-4 bg-slate-200 w-1/2 mx-auto p-3 flex-col text-orange-500 text-2xl">
+                            <ul className="flex mt-4 space-y-2 p-3 flex-col text-xl">
                                 {quiz.questions[currentQuestion].options.map((option, index) => (
-                                    <li key={index}>
-                                        <label className="cursor-pointer cadre">
+                                    <li key={index} className="p-3 rounded-xl border border-gray-300 hover:bg-gray-100 cursor-pointer transition">
+                                        <label className="cursor-pointer flex space-x-2 cadre">
                                             <input
                                                 type="radio"
                                                 name="answer"
                                                 value={option}
                                                 checked={selected === option}
                                                 onChange={(e) => setSelected(e.target.value)}
+                                                className="accent-purple-600 mr-3"
                                             />
                                             {" "}{option}
                                         </label>
@@ -109,21 +112,23 @@ const QuizDetails = () => {
                         </div>
                     )}
                     <div className="flex justify-center text-center">
-                        
-                        <div className="flex  m-4">
+
+                        <div className="flex m-4">
                             <button
                                 onClick={handleDelete}
-                                className="bg-green-400 hover:bg-red-400 hover:text-white font-medium px-4 py-2 rounded"
+                                className="mt-6 bg-purple-600 hover:bg-red-300 cursor-help text-white px-6 py-2 rounded-xl transition"
+
                             >
-                                Supprimer le Quiz
+                                DELET
                             </button>
                             {/* Veux dire pour supprimer le quiz */}
                         </div>
-                        <div>
+
+                        <div className="m-4">
                             <button
                                 onClick={handleAnswer}
                                 disabled={!selected}
-                                className="mt-4 bg-green-400 px-4 py-2 rounded "
+                                className="w-full mt-6 cursor-pointer bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 font-semibold transition rounded-xl "
                             >
                                 Valider
                             </button>
